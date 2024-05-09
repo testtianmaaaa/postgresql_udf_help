@@ -35,6 +35,7 @@
 #include <fmgr.h>
 #include <stdlib.h>
 #include <string.h>
+#include <varatt.h>
 
 #include <ctype.h>
 
