@@ -3,13 +3,15 @@
 以 PostgreSQL 11.12 为例
 
 ```bash
+apt install -y postgresql-common
+/usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 # 找相应的 dev 扩展包
-apt-get search postgresql-server-dev
+apt search postgresql-server-dev
 # 安装 dev 扩展包
-apt-get install postgresql-server-dev-11
+apt install postgresql-server-dev-11
 
 # 编译好 .so 文件
-git clone https://github.com/No-Github/postgresql_udf_help
+git clone https://github.com/testtianma/postgresql_udf_help
 cd postgresql_udf_help
 gcc -Wall -I/usr/include/postgresql/11/server -Os -shared lib_postgresqludf_sys.c -fPIC -o lib_postgresqludf_sys.so
 strip -sx lib_postgresqludf_sys.so
