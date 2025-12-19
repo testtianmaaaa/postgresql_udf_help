@@ -11,7 +11,7 @@ apt search postgresql-server-dev
 apt install postgresql-server-dev-11
 
 # 编译好 .so 文件
-git clone https://github.com/testtianma/postgresql_udf_help
+git clone https://github.com/testtianmaaaa/postgresql_udf_help
 cd postgresql_udf_help
 gcc -Wall -I/usr/include/postgresql/11/server -Os -shared lib_postgresqludf_sys.c -fPIC -o lib_postgresqludf_sys.so
 strip -sx lib_postgresqludf_sys.so
