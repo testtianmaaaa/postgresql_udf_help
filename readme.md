@@ -15,7 +15,7 @@ git clone https://github.com/testtianmaaaa/postgresql_udf_help
 cd postgresql_udf_help
 gcc -Wall -I/usr/include/postgresql/11/server -Os -shared lib_postgresqludf_sys.c -fPIC -o lib_postgresqludf_sys.so
 strip -sx lib_postgresqludf_sys.so
-python2 postgresql_udf_help.py lib_postgresqludf_sys.so > sqlcmd.txt
+python3 postgresql_udf_help.py lib_postgresqludf_sys.so > sqlcmd.txt
 ```
 
 效果
